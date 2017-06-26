@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html style='margin:0px; align-items: center; height: 100%;'>
+  <head>
+    <meta charset='utf-8'/>
+
+    <script type="text/javascript" src="headtrackr-master/headtrackr.min.js"></script>
+    <script type="text/javascript" src="glMatrix/dist/gl-matrix-min.js"></script>
+    <script type="text/javascript" src="libs.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body style='margin:0px; display: flex; align-items: center; height: 100%;' onload='main()'>
+    <video autoplay id="video-background" style="width: 100%; height: auto;"></video>
+    <div class="overlay" style="position: absolute; height: 100%; width: 100%; display: flex; align-items: center;">
+      <canvas id="2d-canvas" style='display: none;'></canvas>
+      <canvas id="webgl-canvas"></canvas>    
+    </div>
+  </body>
+</html>
